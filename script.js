@@ -5,7 +5,7 @@ const areBracketsBalanced = (str) => {
   if (arLength === 0) return true;
   if (arLength % 2 !== 0) return false;
 
-  const map = {")":"("};
+  const map = {")":"(","]":"[","}":"{",};
   const stack = [];
 
   for (let i = 0; i < arLength; i++) {
