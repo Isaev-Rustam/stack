@@ -14,9 +14,7 @@ const areBracketsBalanced = (str) => {
     if ( item === "(" ) stack.push(item);
 
     if ( item === ")" ) {
-      const lastItem = stack.pop();
-
-      if ( lastItem !== map[")"])  {
+      if ( stack.pop() !== map[")"])  {
         return false;
       }
     }
